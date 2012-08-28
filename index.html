@@ -6,17 +6,145 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="">
 	<style>
-		.logo {
-			background: url('logo.jpg');
-			width: 833px;
-			height: 579px;
+		.titlebar {
+			background: url('img/titlebar-bg.png');
+			height: 73px;
+			overflow:auto;
+		}
+		.logo{
+			background: url('img/api-engine-logo.png');
+			width:151px;
+			height:30px;
+			margin:auto;
+			margin-top:21px;
+		}
+		.titlebar-scollop{
+			position:absolute;
+			background: url('img/titlebar-scollop.png');
+			height:2px;
+			width:100%;
+		}
+		.head-space{
+			background: url('img/head-space-bg.png');
+			position:relative;
+			overflow:auto;
+		}
+		.coming-soon{
+			background: url('img/coming-soon.png');
+			width:661px;
+			height:180px;
+			margin:auto;
+			margin-top:45px;
+		}
+		.form-container{
+			width: 447px;
 			margin: auto;
-			margin-top: 200px;
+			margin-top: 73px;
+			position: relative;
+		}
+		.email-address{
+			width:445px;
+			border-radius:4px;
+			border: 1px solid #bdbdbd;
+			height:50px;
+			background: #fff url('img/email-address-bg.png');
+			background-repeat: repeat-x;
+		}
+		.respect-privacy-text{
+			width:231px;
+			height:99px;
+			position:absolute;
+			left:455px;
+			top:-15px;
+			background: url('img/respect-privacy-text.png');
+		}
+		.submit{
+			width:101px;
+			height:30px;
+			border-radius: 4px;
+			border: 1px solid #3e474d;
+			margin:auto;
+			display:block;
+			margin-top:25px;
+			margin-bottom:54px;
+			background: url('img/button-blue-bg.png');
+			color:#fff;
+			font-weight:bold;
+			text-shadow: 0 1px #232a2e;
+		}
+		.head-space-scollop{
+			background: url('img/head-space-scollop.png');
+			height:3px;
+			width:100%;
+			position:absolute;
+		}
+		.graph-paper{
+			background: url('img/graph-paper-bg.png');
+			position:relative;
+			overflow: auto;
+		}	
+		.share-container{
+			width: 445px;
+			margin: auto;
+			margin-top: 28px;
+			margin-bottom: 25px;
+		}	
+		.share-this-page{
+			width:131px;
+			height:14px;
+			background:url('img/share-this-page.png');
+			float: left;
+			margin-right: 30px;
+			margin-top: 3px;
+		}
+		.addthis_toolbox a {
+			width: 84px;
+		}
+		.graph-paper-scollop{
+			background: url('img/graph-paper-scollop.png');
+			height:2px;
+		}
+		body{
+			margin:0;
+			padding:0;
+			background: url('img/features-bg.png');
 		}
 	</style>
 </head>
 <body>
-  <div class="logo"></div>
+	
+	<div class="titlebar">
+		<div class="logo"></div>
+	</div>
+	<div class="head-space">
+		<div class="titlebar-scollop"></div>
+		<div class="coming-soon"></div>
+		<div class="form-container">
+			<input type="text" class="email-address" />
+			<button class="submit">SUBMIT</button>
+			<div class="respect-privacy-text"></div>
+		</div>
+	</div>
+	<div class="graph-paper">
+		<div class="head-space-scollop"></div>
+		<div class="share-container">
+			<div class="share-this-page"></div>
+			<!-- AddThis Button BEGIN -->
+			<div class="addthis_toolbox addthis_default_style ">
+			<a class="addthis_button_facebook_like" fb:like:layout="button_count" style="margin-right: 19px;"></a>
+			<a class="addthis_button_tweet" style="margin-right: 25px;"></a>
+			<a class="addthis_button_google_plusone" g:plusone:size="medium" style="margin-right: 0; width: 60px;"></a> 
+			</div>
+			<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-503c4a520b5d9cb1"></script>
+			<!-- AddThis Button END -->
+
+
+		</div>
+		<div style="clear: both;"></div>
+	</div>
+	<div class="graph-paper-scollop"></div>
+
+
 
 </body>
 </html> 
