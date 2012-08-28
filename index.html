@@ -6,11 +6,38 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="">
 	<style>
+		@font-face {
+		    font-family: 'AftaserifItalic';
+		    src: url('AftaSerifThin-Italic-webfont.ttf') format('truetype');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'BebasNeueRegular';
+			src: url('BebasNeue-webfont.ttf') format('truetype');
+			font-weight: normal;
+		    font-style: normal;
+		}
+
+		input::-webkit-input-placeholder {
+		    color:    #cecece;
+		}
+
+		input:-moz-placeholder {
+			color:    #cecece;
+		}
+
+		input:-ms-input-placeholder {
+			color:    #cecece;
+		}
+
 		.titlebar {
 			background: url('img/titlebar-bg.png');
 			height: 73px;
 			overflow:auto;
 		}
+
 		.logo{
 			background: url('img/api-engine-logo.png');
 			width:151px;
@@ -18,17 +45,21 @@
 			margin:auto;
 			margin-top:21px;
 		}
+
 		.titlebar-scollop{
 			position:absolute;
 			background: url('img/titlebar-scollop.png');
 			height:2px;
 			width:100%;
 		}
+
 		.head-space{
 			background: url('img/head-space-bg.png');
 			position:relative;
 			overflow:auto;
+			height:465px;
 		}
+
 		.coming-soon{
 			background: url('img/coming-soon.png');
 			width:661px;
@@ -36,20 +67,31 @@
 			margin:auto;
 			margin-top:45px;
 		}
+
 		.form-container{
 			width: 447px;
 			margin: auto;
 			margin-top: 73px;
 			position: relative;
 		}
+
 		.email-address{
-			width:445px;
+			width:435px;
+			font-family: 'AftaserifItalic';
 			border-radius:4px;
 			border: 1px solid #bdbdbd;
-			height:50px;
+			height:40px;
 			background: #fff url('img/email-address-bg.png');
 			background-repeat: repeat-x;
+			font-size:20px;
+		    color:#606d75;
+		    padding:5px;
+		    text-align:center;
+		    letter-spacing:2px;
+		    font-weight:bold;
+		    outline: none;
 		}
+
 		.respect-privacy-text{
 			width:231px;
 			height:99px;
@@ -58,6 +100,7 @@
 			top:-15px;
 			background: url('img/respect-privacy-text.png');
 		}
+
 		.submit{
 			width:101px;
 			height:30px;
@@ -71,24 +114,30 @@
 			color:#fff;
 			font-weight:bold;
 			text-shadow: 0 1px #232a2e;
+			cursor: pointer;
 		}
+
 		.head-space-scollop{
 			background: url('img/head-space-scollop.png');
 			height:3px;
 			width:100%;
 			position:absolute;
 		}
+
 		.graph-paper{
 			background: url('img/graph-paper-bg.png');
 			position:relative;
 			overflow: auto;
+			height:73px;
 		}	
+
 		.share-container{
 			width: 445px;
 			margin: auto;
 			margin-top: 28px;
 			margin-bottom: 25px;
 		}	
+
 		.share-this-page{
 			width:131px;
 			height:14px;
@@ -97,19 +146,119 @@
 			margin-right: 30px;
 			margin-top: 3px;
 		}
+
 		.addthis_toolbox a {
 			width: 84px;
 		}
+
 		.graph-paper-scollop{
 			background: url('img/graph-paper-scollop.png');
 			height:2px;
 		}
+
 		body{
 			margin:0;
 			padding:0;
 			background: url('img/features-bg.png');
 		}
-	</style>
+
+		.thank-you-container {
+			width: 501px;
+			margin: auto;
+			margin-top: 59px;
+			position: relative;
+		}
+		.thanks {
+			width: 501px;
+			height: 104px;
+			background: url('img/thanks.png');
+			margin: auto;
+		}
+		.thank-you-email {
+			text-align: center;
+			font-family: 'AftaserifItalic';
+			font-size:20px;
+		    color:#606d75;
+		    padding:5px;
+		    text-align:center;
+		    letter-spacing:2px;
+		    margin-top: 50px;
+		    font-weight:bold;
+		}
+		.appreciate-interest {
+			width: 240px;
+			height: 36px;
+			margin: auto;
+			margin-top: 40px;
+			background: url('img/appreciate-interest.png');
+		}
+		.in-the-mean-time {
+			height: 14px;
+			width: 157px;
+			margin: auto;
+			background: url('img/in-the-mean-time.png');
+			margin-top: 33px;
+		}
+		.follow-us-container {
+			width: 970px;
+			margin: auto;
+			margin-top: 52px;
+		}
+		.follow-us {
+			width: 522px;
+			height: 14px;
+			margin: auto;
+			background: url('img/follow-us.png');
+		}
+		.buttons-container {
+			margin: auto;
+			margin-top: 43px;
+			width: 745px;
+		}
+		.buttons-container a {
+			display: inline-block;
+			font-family: "BebasNeueRegular";
+			color: #ffc938;
+			margin-right: 26px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.buttons-container .button {
+			width: 125px;
+			height: 124px;
+		}
+		.twitter {
+			background: url('img/twitter.png');
+		}
+		.github {
+			background: url('img/github.png');
+		}
+		.facebook {
+			background: url('img/facebook.png');
+		}
+		.google {
+			background: url('img/google.png');
+		}
+		.linkedin {
+			background: url('img/linkedin.png');
+		}
+		.button-label {
+			margin-top: 12px;
+			letter-spacing: 1px;
+		}
+		.buttons-container a:hover {
+			color: #ebebeb;
+		}
+		.cog-banner {
+			width: 970px;
+			height: 30px;
+			background: url('img/cog-banner.png');
+			margin-top: 66px;
+		}
+		.email-error {
+			border: 1px solid #cd361d;
+		}
+	</style>	
 </head>
 <body>
 	
@@ -118,33 +267,104 @@
 	</div>
 	<div class="head-space">
 		<div class="titlebar-scollop"></div>
+
+
 		<div class="coming-soon"></div>
 		<div class="form-container">
-			<input type="text" class="email-address" />
+			<input type="text" placeholder="Enter your email address..." class="email-address" spellcheck="false" />
 			<button class="submit">SUBMIT</button>
 			<div class="respect-privacy-text"></div>
 		</div>
+
+		<div class="thank-you-container" style="display: none;">
+			<div class="thanks"></div>
+			<div class="thank-you-email">person@theinternet.com</div>
+			<div class="appreciate-interest"></div>
+		</div>
+
 	</div>
 	<div class="graph-paper">
 		<div class="head-space-scollop"></div>
+
 		<div class="share-container">
 			<div class="share-this-page"></div>
-			<!-- AddThis Button BEGIN -->
 			<div class="addthis_toolbox addthis_default_style ">
 			<a class="addthis_button_facebook_like" fb:like:layout="button_count" style="margin-right: 19px;"></a>
 			<a class="addthis_button_tweet" style="margin-right: 25px;"></a>
 			<a class="addthis_button_google_plusone" g:plusone:size="medium" style="margin-right: 0; width: 60px;"></a> 
 			</div>
 			<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-503c4a520b5d9cb1"></script>
-			<!-- AddThis Button END -->
-
-
 		</div>
+		<div class="in-the-mean-time" style="display: none;"></div>
 		<div style="clear: both;"></div>
 	</div>
 	<div class="graph-paper-scollop"></div>
+	<div class="follow-us-container" style="display: none;">
+		<div class="follow-us"></div>
+		<div class="buttons-container">
+			<a href="">
+				<div class="button twitter"></div>
+				<div class="button-label">TWITTER</div>
+			</a>
+			<a href="">
+				<div class="button facebook"></div>
+				<div class="button-label">FACEBOOK</div>
+			</a>
+			<a href="">
+				<div class="button github"></div>
+				<div class="button-label">GITHUB</div>
+			</a>
+			<a href="">
+				<div class="button linkedin"></div>
+				<div class="button-label">LINKEDIN</div>
+			</a>
+			<a href="" style="margin-right: 0;">
+				<div class="button google"></div>
+				<div class="button-label">GOOGLE</div>
+			</a>
+		</div>
+		<div class="cog-banner"></div>
+	</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery-1.8.0.min.js"></script>
+<script> 
+	function validateEmail(email) { 
+		var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		return re.test(email);
+	} 
+	$('.email-address').on('keydown', function(ev) {
+		$('.email-address').removeClass('email-error');
+		if(ev.keyCode === 13){
+			$('.submit').click();
+		}
+	});
+	$(".submit").on('click',function(){
+		var email = $('.email-address').val();
+		if(validateEmail(email)) {
+			$('.thank-you-email').text(email);
+			$.ajax('http://mailchimp.apiengine.io/email/' + email, {
+				success: function () {
+					console.log(arguments);
+					$(".coming-soon, .form-container, .share-container").fadeOut(350, function () {
+						$('.thank-you-container').fadeIn(300, function () {
+							$('.in-the-mean-time').fadeIn(300, function () {
+								$('.follow-us-container').fadeIn(300);
+							})
+						});
+					});
+					
+					$('.head-space').animate({height: '350px'}, 500, function() {
+					    // Animation complete.
+					  });
 
 
+				}
+			})
+			
+		} else {
+			$('.email-address').addClass('email-error');
+		}
+	})
+</script>
 
 </body>
 </html> 
