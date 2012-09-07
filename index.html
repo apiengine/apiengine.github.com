@@ -266,6 +266,13 @@
 			background: url('img/cog-banner.png');
 			margin-top: 66px;
 		}
+				.features {
+			width: 888px;
+			height: 468px;
+			background: url('img/features.png');
+			margin: auto;
+			margin-top: 50px;
+		}
 		.email-error {
 			border: 1px solid #cd361d;
 		}
@@ -310,6 +317,7 @@
 		<div style="clear: both;"></div>
 	</div>
 	<div class="graph-paper-scollop"></div>
+	<div class="features"></div>
 	<div class="follow-us-container" style="display: none;">
 		<div class="follow-us"></div>
 		<div class="buttons-container">
@@ -355,7 +363,7 @@
 			$.ajax('http://mailchimp.apiengine.io/email/' + email, {
 				success: function () {
 					console.log(arguments);
-					$(".coming-soon, .form-container, .share-container").fadeOut(350, function () {
+					$(".coming-soon, .form-container, .share-container, .features").fadeOut(350, function () {
 						$('.thank-you-container').fadeIn(300, function () {
 							$('.in-the-mean-time').fadeIn(300, function () {
 								$('.follow-us-container').fadeIn(300);
